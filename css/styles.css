@@ -24,9 +24,12 @@ header {
     position: sticky;
     top: 0;
 }
-
+nav{display: none;}
 .logo { font-size: 1.5rem; font-weight: bold; color: var(--accent); }
 nav a { color: white; margin-right: 20px; text-decoration: none; }
+/*--------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------*/
 
 /* Hero */
 .hero {
@@ -41,14 +44,16 @@ nav a { color: white; margin-right: 20px; text-decoration: none; }
 .hero-content span { color: var(--accent); }
 
 .hero-image img {
-    width: 100%;
+    width: 700px;
     mix-blend-mode: screen; 
     filter: contrast(1.1) brightness(1.2);
     border-radius: 20px;
     box-shadow: 0 0 30px rgba(98, 0, 234, 0.5);
     max-width: 100%;
+
     
 }
+
 
 /* Tarjetas de Precio */
 .pricing { padding: 80px 10%; text-align: center; }
@@ -99,6 +104,7 @@ ul li { margin: 10px 0; opacity: 0.8; }
     cursor: pointer;
     font-weight: bold;
     transition: 0.3s;
+    text-decoration: none;
 }
 .process { padding: 80px 10%; background: #0f0f1e; text-align: center; }
 .process-steps { display: flex; justify-content: space-around; gap: 30px; margin-top: 40px; }
@@ -158,11 +164,7 @@ ul li { margin: 10px 0; opacity: 0.8; }
     box-shadow: 0 0 15px var(--primary);
 }
 
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 30px;
-}
+
 
 .project-card {
     background: rgba(255, 255, 255, 0.03);
@@ -188,18 +190,189 @@ ul li { margin: 10px 0; opacity: 0.8; }
 
 .card-img img { width: 100%; height: 100%; object-fit: cover; }
 
-.card-overlay {
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background: rgba(98, 0, 234, 0.6);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: 0.3s;
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
 }
 
-.card-img:hover .card-overlay { opacity: 1; }
+.project-block {
+    background: rgba(255, 255, 255, 0.05); /* Un toque morado muy sutil */
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.project-block:hover {
+    transform: translateY(-10px); /* Efecto levitación */
+}
+
+.block-img img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* Para que la imagen no se deforme */
+    display: block;
+}
+
+.block-text {
+    padding: 20px;
+    text-align: left;
+}
+
+.block-text h4 {
+    color: #bb86fc; /* Morado claro/neón */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.block-text p {
+    color: #e0e0e0;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.link-proyect {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+/*----------- showcase iluminacion---------------------*/
+.block-img {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(187, 134, 252, 0.3); 
+    transition: all 0.4s ease;
+    border: 1px solid rgba(187, 134, 252, 0.2);
+}
+
+.project-block:hover .block-img {
+    box-shadow: 0 0 25px rgba(187, 134, 252, 0.6), 
+                0 0 10px rgba(187, 134, 252, 0.4);
+    transform: scale(1.02); 
+    border: 1px solid rgba(187, 134, 252, 0.8);
+}
+
+.project-block:hover h4 {
+    text-shadow: 0 0 8px rgba(187, 134, 252, 0.8);
+    color: #fff;}
+/*-------------------------------------------------------------*/
+/* MODAL LANDINGS */
+.landing-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  display: none;
+  z-index: 9999;
+}
+
+.landing-modal.active {
+  display: block;
+}
+
+.landing-modal iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Botón cerrar */
+.modal-close {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+  z-index: 10000;
+}
+/*------------------------equipo---------------------*/
+/* Estilo base de la sección */
+.other-services {
+  background-color: var(--bg-secondary, #0a0a12); /* Usa tu variable o color oscuro */
+  color: var(--text-primary, #eee);
+  padding: 3rem 1rem;
+  text-align: center;
+  border-radius: 12px;
+  max-width: 720px;
+  margin: 3rem auto;
+  box-shadow: 0 6px 15px rgba(23, 10, 126, 0.5);
+}
+
+/* Título con color secundario/acento */
+.other-services h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: var(--accent-color, #6200ea); /* Usa tu color de acento */
+}
+
+/* Texto con opacidad para suavizar */
+.other-services p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  opacity: 0.85;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Botón primario, usa tu clase .btn-primary existente */
+.other-services .btn-primary {
+  padding: 0.85rem 2.3rem;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover suave */
+.other-services .btn-primary:hover {
+  filter: brightness(0.9);
+  cursor: pointer;
+}
+
+/* Responsive para móviles */
+@media (max-width: 480px) {
+  .other-services {
+    padding: 2rem 1rem;
+    max-width: 90%;
+  }
+
+  .other-services h2 {
+    font-size: 1.6rem;
+  }
+
+  .other-services p {
+    font-size: 1rem;
+  }
+
+  .other-services .btn-primary {
+    padding: 0.7rem 1.6rem;
+    font-size: 1rem;
+  }
+}
+
+/*---------------------------------------------------*/
+
+/* Desktop: modal centrado */
+@media (min-width: 768px) {
+  .landing-modal iframe {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    display: block;
+    border-radius: 12px;
+  }
+}
+
+/*-------------------------------------------------------------*/
 
 .view-btn {
     background: white;
@@ -400,6 +573,7 @@ ul li { margin: 10px 0; opacity: 0.8; }
 .legal-links a:hover {
     color: white;
 }
+
 /*--------------------------------------*/
 .whatsapp-float {
     position: fixed;
@@ -427,6 +601,12 @@ ul li { margin: 10px 0; opacity: 0.8; }
         flex-direction: column;
         text-align: center;
         gap: 15px;
+    }
+    .hero-image{
+        display: none;
+    }
+    .logo{
+        margin: 0 auto;
     }
 }
 /* Responsive */

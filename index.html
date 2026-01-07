@@ -20,70 +20,55 @@
 
     <section class="hero">
         <div class="hero-content">
-            <h1>Innovar. Transformar. <span>Prosperar.</span></h1>
-            <p>Creamos la presencia digital que tu negocio necesita para escalar al siguiente nivel.</p>
-            <a href="#portfolio" class="btn-primary" style="text-decoration:none;">Ver Portafolio</a>
+            <h1>Crear. Conectar. <span>Crecer.</span></h1>
+            <p>Diseño landing pages que ayudan a tu negocio a ganar clientes y crecer sin complicaciones.</p>
         </div>
         <div class="hero-image">
             <img src="img/landing page.jpg" alt="Preview Landing">
         </div>
     </section>
  <!----------------------------------------------------------------->
- <section id="showcase" class="showcase">
+<section id="showcase" class="showcase">
     <div class="container">
-        <h2>Nuestros Proyectos <span>Destacados</span></h2>
+        <h2>Modelos <span>Destacados</span></h2>
         
-        <div class="filter-buttons">
-            <button class="filter-btn active" data-filter="all">Todos</button>
-            <button class="filter-btn" data-filter="salud">Salud & Bienestar</button>
-            <button class="filter-btn" data-filter="estetica">Estética</button>
-            <button class="filter-btn" data-filter="turismo">Turismo</button>
-        </div>
-
         <div class="projects-grid">
-            <div class="project-card" data-category="salud">
-                <div class="card-img">
-                    <img src="https://via.placeholder.com/400x500/6200ea/ffffff?text=Landing+Psicología" alt="Psicología">
-                    <div class="card-overlay">
-                        <a href="#img2" class="view-btn">Ver Detalle</a>
-                    </div>
+            <div class="project-block">
+                <div class="block-img">
+                    <img src="img/modelo pagina estandar para departamento vacacionarl.png" alt="Modelo de landig page de cabañas vacacionales">
                 </div>
-                <div class="card-info">
-                    <h4>Clínica de Psicología</h4>
-                    <p>Enfoque en conversión y calma visual.</p>
+                <div class="block-text">
+                    <h4>Estandar</h4>
+                    <p>Enfoque en conversión y calma visual para profesionales de la salud.</p>
+                    <button class="btn-primary open-modal" data-url="paginas/estandar.html">Ver Demo</button>
+
                 </div>
             </div>
 
-            <div class="project-card" data-category="estetica">
-                <div class="card-img">
-                    <img src="https://via.placeholder.com/400x500/bb86fc/000000?text=Landing+Manicuría" alt="Manicuría">
-                    <div class="card-overlay">
-                        <a href="#img3" class="view-btn">Ver Detalle</a>
-                    </div>
+            <div class="project-block">
+                <div class="block-img">
+                    <img src="/img/landig page premium.png" alt="hotel 4 estrellas con grandes ambientes para ir de finde semana">
                 </div>
-                <div class="card-info">
-                    <h4>Nails & Beauty Studio</h4>
-                    <p>Diseño elegante y agendamiento online.</p>
+                <div class="block-text">
+                    <h4>Premium</h4>
+                    <p>Diseño elegante, moderno y enfocado a reservas directas.</p>
+                    <button class="btn-primary open-modal" data-url="paginas/premium.html">Ver Demo</button>
                 </div>
             </div>
 
-            <div class="project-card" data-category="turismo">
-                <div class="card-img">
-                    <img src="https://via.placeholder.com/400x500/3700b3/ffffff?text=Landing+Cabañas" alt="Cabañas">
-                    <div class="card-overlay">
-                        <a href="#img1" class="view-btn">Ver Detalle</a>
-                    </div>
+            <div class="project-block">
+                <div class="block-img">
+                    <img src="/img/landing page pro.png" alt="Cabañas vacacionales ">
                 </div>
-                <div class="card-info">
-                    <h4>Luxury Rentals</h4>
-                    <p>Galería de fotos y sistema de reservas.</p>
+                <div class="block-text">
+                    <h4>Pro</h4>
+                    <p>Experiencia inmersiva con galeria y storytelling visual.</p>
+                    <button class="btn-primary open-modal" data-url="paginas/pro.html">Ver Demo</button>
+
                 </div>
-                
-            </div>    
+            </div>
         </div>
-        
     </div>
-    
 </section>
  
  <!------------------------------------------------------------------>
@@ -98,12 +83,14 @@
                 <ul>
                     <li>Diseño One-Page</li>
                     <li>Diseño limpio y 100% Responsive</li>
-                    <li>velocidad de carga optimizada</li>
-                    <li>boton directo a WhatsApp</li>
-                    <li>Soporte técnico 7 días</li>
-                    <button class="btn-primary">Ver Modelo Estándar</button>
-
-                </ul>
+                    <li>Velocidad de carga optimizada</li>
+                    <li>Boton directo a WhatsApp</li>
+                    <li>Entrega en 5 días habiles</li>
+                    <li>Pago unico/sin contrato</li>
+                    <button class="btn-primary whatsapp-btn" data-plan="Estandar">
+                         Quiero este plan
+                    </button>
+                 </ul>
             </div>
 
             <div class="card featured">
@@ -114,11 +101,12 @@
                     <li>Todo lo Estándar, más:</li>
                     <li>Diseño con Micro-iteracciones</li>
                     <li>Copywriting persuasivo</li>
-                    <li>seccion de FAQ(Preguntas Frecuentes)</li>
+                    <li>Seccion de FAQ(Preguntas Frecuentes)</li>
                     <li>Formulario de contacto personalizado</li>
-                    <li>Soporte técnico por 15 días</li>
+                    <li>Entrega 3-4 días habiles</li>
+                    <li>Soporte técnico por 5 días</li>
                 </ul>
-                <button class="btn-primary">Ver Modelo Premium</button>
+                <button class="btn-primary whatsapp-btn" data-plan="Premium">Más Elegido</button>
             </div>
 
             <div class="card">
@@ -130,54 +118,73 @@
                     <li>Secciones ilimitadas para Stollitelling</li>
                     <li>SEO</li>
                     <li>Integracion con CRM o Email Marketing</li>
-                    <li>Optimización de accesibilidad pro.</li>
-                    <li>Optimización de accesibilidad pro.</li>
+                    <li>Entrega Prioritaria</li>
                 </ul>
-                <button class="btn-card">Ver Modelo Pro</button>
+                <button class="btn-primary whatsapp-btn" data-plan="Pro">Recomendado</button>
             </div>
         </div>
     </section>
 
 
     <section id="nosotros" class="about">
-        <div class="about-text">
-            <h2>Expertos en Soluciones Digitales</h2>
-            <p>En **Nux Solutions**, no solo hacemos webs; construimos herramientas de venta. Somos una agencia especializada en el desarrollo de <strong>Landing Pages de alta conversión, aplicaciones móviles y software a medida</strong>.</p>
-            <p>Nuestra misión es transformar ideas complejas en interfaces simples y efectivas.</p>
-        </div>
-    </section>
-    <section class="process">
-    <h2>Nuestro Método de Trabajo</h2>
-    <div class="process-steps">
-        <div class="step">
-            <span class="step-num">01</span>
-            <h4>Estrategia</h4>
-            <p>Analizamos tus objetivos y competencia.</p>
-        </div>
-        <div class="step">
-            <span class="step-num">02</span>
-            <h4>Diseño UX/UI</h4>
-            <p>Creamos interfaces modernas y funcionales.</p>
-        </div>
-        <div class="step">
-            <span class="step-num">03</span>
-            <h4>Desarrollo</h4>
-            <p>Código limpio, rápido y optimizado.</p>
-        </div>
-    </div>
+  <div class="about-text">
+    <h2>Hola, soy Mika 👋</h2>
+
+    <p>
+      Diseño landing pages pensadas para algo muy concreto: 
+      <strong>que tu proyecto consiga más consultas y reservas</strong>.
+    </p>
+
+    <p>
+      No hago webs genéricas. Cada landing que creo está enfocada en 
+      conversión, claridad y experiencia en móvil, 
+      para que tus clientes entiendan rápido qué ofreces y cómo contactarte.
+    </p>
+
+    <p>
+      Trabajo de forma cercana, sin vueltas raras ni contratos eternos.
+      Te acompaño desde la idea hasta que tu landing está online y funcionando.
+    </p>
+  </div>
 </section>
-<!-------------------------------------------------------------------->
+<section class="process">
+  <h2>Cómo trabajo contigo</h2>
+  <div class="process-steps">
+
+    <div class="step">
+      <span class="step-num">01</span>
+      <h4>Entiendo tu proyecto</h4>
+      <p>Hablamos para conocer bien tus objetivos y lo que te diferencia.</p>
+    </div>
+
+    <div class="step">
+      <span class="step-num">02</span>
+      <h4>Diseño que conecta</h4>
+      <p>Creo una landing clara, fácil y atractiva, que hable a tus clientes.</p>
+    </div>
+
+    <div class="step">
+      <span class="step-num">03</span>
+      <h4>Desarrollo y entrega</h4>
+      <p>Construyo la página rápida, con código limpio y lista para usar.</p>
+    </div>
+
+  </div>
+</section>
+
+<!---------------------------form----------------------------------------->
  <section class="cta-banner">
     <div class="cta-container">
         <div class="cta-text">
-            <span class="badge-new">¿Listo para el siguiente nivel?</span>
-            <h2>Tu negocio merece una <br><span>presencia digital de élite</span></h2>
-            <p>No solo diseñamos páginas, creamos activos digitales que trabajan para ti 24/7. Solicita tu auditoría gratuita hoy mismo.</p>
+            <span class="badge-new">¿Listo para dar el salto?</span>
+            <h2>Tu proyecto merece una <br><span>presencia online que realmente funcione</span></h2>
+            <p>No solo diseño páginas,creo herramientas que trabajan por vos.<br>
+                ¿Querés una landing que convierta?Hablemos , la auditoria es gratis. <p>
             
             <div class="cta-features">
-                <span><i class="fas fa-check"></i> Entrega en 7 días</span>
-                <span><i class="fas fa-check"></i> Diseño exclusivo</span>
-                <span><i class="fas fa-check"></i> Soporte post-venta</span>
+                <span><i class="fas fa-check"></i> Entrega rápida(3-5 días)</span>
+                <span><i class="fas fa-check"></i> Diseño pensado para vos</span>
+                <span><i class="fas fa-check"></i> Acompañamiento cercano</span>
             </div>
         </div>
 
@@ -200,9 +207,9 @@
                 </div>
                 <input type="text" name="_gotcha" style="display:none">
                 <div class="input-group-checkbox">
-    <input type="checkbox" id="privacy" required>
-    <label for="privacy">Acepto la <a href="#">política de privacidad</a> y el uso de mis datos para esta cotización.</label>
-</div>
+                  <input type="checkbox" id="privacy" required>
+                  <label for="privacy">Acepto la <a href="#">política de privacidad</a> y el uso de mis datos para esta cotización.</label>
+                </div><br>
                 <button 
                     class="g-recaptcha btn-cta" 
                     data-sitekey="TU_CLAVE_DE_GOOGLE" 
@@ -211,18 +218,33 @@
                     Enviar presupuesto
                 </button>
             </form>
-            <p class="form-note">Te contactaremos en menos de 2 horas.</p>
+            <p class="form-note">Te contactare lo antes posible.</p>
         </div>
     </div>
 </section>
-<!------------------------------------------------------------------->
+<!----------------------------------app y ecomers--------------------------------->
+<section id="otros-servicios" class="other-services">
+  <div class="container">
+    <h2>¿Querés una e-commerce o una app web?</h2>
+    <p>
+      Trabajo junto con un equipo para crear tiendas online y aplicaciones web a medida. 
+      Si querés un proyecto así, <strong>contactame para pedir presupuesto</strong> y armamos algo juntos.
+    </p>
+    <a href="https://wa.me/549XXXXXXXXXX?text=Hola%20Mika%2C%20quiero%20presupuesto%20para%20una%20e-commerce%20o%20app%20web." target="_blank" class="btn-primary">
+      Pedir presupuesto
+    </a>
+  </div>
+</section>
+
+<!--------------------------------------------------------------------->
 
     <footer>
         <footer class="main-footer">
     <div class="footer-container">
         <div class="footer-col">
             <h2 class="footer-logo">Nux<span>Solutions</span></h2>
-            <p>Transformamos visiones en experiencias digitales de alto impacto. Especialistas en Landing Pages que venden.</p>
+            <p> Ayudo a que proyectos como el tuyo tengan presencia digital que conecta y vende.  
+                     Landing pages diseñadas con foco en resultados reales.</p>
             <div class="social-links">
                 <a href="#"><i class="fab fa-linkedin"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
@@ -243,8 +265,8 @@
         <div class="footer-col">
             <h4>Soluciones</h4>
             <ul>
-                <li><a href="#">Landings Médicas</a></li>
-                <li><a href="#">E-commerce Estética</a></li>
+                <li><a href="#">Landings Pages</a></li>
+                <li><a href="#">E-commerces</a></li>
                 <li><a href="#">Apps a Medida</a></li>
             </ul>
         </div>
@@ -253,7 +275,7 @@
             <h4>Contacto</h4>
             <p><i class="fas fa-envelope"></i> nuxsolutions@gmail.com</p>
             <p><i class="fas fa-phone"></i> +54 123 456 789</p>
-            <p><i class="fas fa-map-marker-alt"></i>España-Madrid/Argentina-Monte Hermoso</p>
+            <p><i class="fas fa-map-marker-alt"></i> España-Madrid/Argentina-Monte Hermoso</p>
         </div>
     </div>
 
@@ -271,6 +293,11 @@
     <i class="fab fa-whatsapp"></i>
 </a>
    <script src="script.js"></script>
+<div id="landing-modal" class="landing-modal">
+  <button class="modal-close" aria-label="Cerrar">✕</button>
+  <iframe id="landing-frame"></iframe>
+</div>
+
 
 </body>
 </html>
