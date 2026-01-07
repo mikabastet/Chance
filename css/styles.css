@@ -609,14 +609,17 @@ ul li { margin: 10px 0; opacity: 0.8; }
         margin: 0 auto;
     }
     body {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
   /* Si tienes un contenedor principal, por ejemplo .container o .hero-content, también puedes agregar: */
   .hero-content {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .hero-content h1{
+    font-size: 2rem;
   }
 }
 /* Responsive */
