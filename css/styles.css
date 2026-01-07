@@ -624,6 +624,25 @@ ul li { margin: 10px 0; opacity: 0.8; }
   .cta-text h2{
     font-size: 2rem;
   }
+  .cta-form-box {
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+  }
+
+  .input-group, .input-group-checkbox {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .input-group input,
+  .input-group select {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
 }
 /* Responsive */
 @media (max-width: 992px) {
